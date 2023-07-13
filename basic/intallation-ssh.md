@@ -12,14 +12,13 @@
 
 * ubuntu@192.168.64.6: Permission denied (publickey).
 
-오류 원인은 ubuntu 계정에 비밀번호가 없어서 문제가 발생 
+접속 권한을 안주어서 문제. ssh 접속지 password 도 가능하게 설정을 바꾼다
 
 해결 방법 
 
-1. 계정에 비밀번호를 셋팅 한다. 
-2. ssh 설정을 변경 한다.
 
 
+## 설정 변경 하기
+sudo nano /etc/ssh/sshd_config
 
-## 계정 비밀번호 설정 하기
-sudo passwd ubuntu
+![image](https://github.com/matin03/study-linux/assets/3805205/d4dc8aee-2ed7-427e-b8e4-0628f1b8ec5e)
